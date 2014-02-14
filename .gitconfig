@@ -36,6 +36,7 @@
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	editor = nano
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -76,5 +77,25 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
-[push]
-	default = simple
+	
+[credential]
+	helper = osxkeychain
+
+# [push]
+#	default = simple
+
+
+[user]
+	email = gmail@rosenbury.com
+	name = Charlie Rosenbury
+[diff]
+	external = /Users/chuckmo/git-twdiff.sh
+	tool = opendiff
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[difftool]
+	prompt = false

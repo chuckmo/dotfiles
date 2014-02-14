@@ -36,13 +36,18 @@ brew install php54
 brew install ack
 #brew install exiv2
 brew install git
-#brew install imagemagick
+brew install imagemagick
 brew install lynx
 brew install node
 brew install rename
 brew install rhino
 brew install tree
 brew install webkit2png
+
+
+# CHUCKMO ISH
+brew install homebrew/dupes/nano
+echo "MAKE SURE YOU: https://github.com/craigbarnes/nanorc"
 
 # Remove outdated versions from the cellar
 brew cleanup
