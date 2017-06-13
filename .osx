@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 
 # ~/.osx — http://mths.be/osx
@@ -556,3 +557,6 @@ for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
 	killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+=======
+# 301 https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+>>>>>>> 7657dc538a2fda0f2dd8a603bbb957b1d0b490c5
